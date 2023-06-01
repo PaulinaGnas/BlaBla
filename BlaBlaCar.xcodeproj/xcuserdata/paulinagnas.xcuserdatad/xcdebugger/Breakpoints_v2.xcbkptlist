@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "9637E958-7C3E-4F98-8325-9E652A9582A1"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8156EFBB-DB6B-415A-A1E5-438A4622B14E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BlaBlaCar/RideCreator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "46EB0E14-3772-4F3F-8E2E-B9731F4AFD4D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BlaBlaCar/RideCreator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "RideCreator"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "46EB0E14-3772-4F3F-8E2E-B9731F4AFD4D - c65c0cb5aaa8b47f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BlaBlaCar.RideCreator.init() -&gt; BlaBlaCar.RideCreator"
+                  moduleName = "BlaBlaCar"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulinagnas/Desktop/BlaBlaCar/BlaBlaCar/RideCreator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "177">
+               </Location>
+               <Location
+                  uuid = "46EB0E14-3772-4F3F-8E2E-B9731F4AFD4D - 20ace2d48294d287"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BlaBlaCar.RideCreator.init(startCity: Swift.Optional&lt;BlaBlaCar.City&gt;, endCity: Swift.String) -&gt; BlaBlaCar.RideCreator"
+                  moduleName = "BlaBlaCar"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulinagnas/Desktop/BlaBlaCar/BlaBlaCar/RideCreator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "70">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2521237C-A9E0-4CA8-AE94-744A780C0CF1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BlaBlaCar/RideCreator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "RideCreator"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "2521237C-A9E0-4CA8-AE94-744A780C0CF1 - ae3ef524abb01ca2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of BlaBlaCar.RideCreator.startCity : Swift.Optional&lt;BlaBlaCar.City&gt;"
+                  moduleName = "BlaBlaCar"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulinagnas/Desktop/BlaBlaCar/BlaBlaCar/RideCreator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "94">
+               </Location>
+               <Location
+                  uuid = "2521237C-A9E0-4CA8-AE94-744A780C0CF1 - 7617f267126142f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BlaBlaCar.RideCreator.startCity.getter : Swift.Optional&lt;BlaBlaCar.City&gt;"
+                  moduleName = "BlaBlaCar"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulinagnas/Desktop/BlaBlaCar/BlaBlaCar/RideCreator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "153">
+               </Location>
+               <Location
+                  uuid = "2521237C-A9E0-4CA8-AE94-744A780C0CF1 - bb7bef5f068b10c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BlaBlaCar.RideCreator.startCity.setter : Swift.Optional&lt;BlaBlaCar.City&gt;"
+                  moduleName = "BlaBlaCar"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulinagnas/Desktop/BlaBlaCar/BlaBlaCar/RideCreator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "197">
+               </Location>
+               <Location
+                  uuid = "2521237C-A9E0-4CA8-AE94-744A780C0CF1 - b9e4d6bb2c64217b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BlaBlaCar.RideCreator.startCity.modify : Swift.Optional&lt;BlaBlaCar.City&gt;"
+                  moduleName = "BlaBlaCar"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulinagnas/Desktop/BlaBlaCar/BlaBlaCar/RideCreator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "276">
+               </Location>
+               <Location
+                  uuid = "2521237C-A9E0-4CA8-AE94-744A780C0CF1 - e7ee3ca99d25c6df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BlaBlaCar.RideCreator.startCity.modify : Swift.Optional&lt;BlaBlaCar.City&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "BlaBlaCar"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulinagnas/Desktop/BlaBlaCar/BlaBlaCar/RideCreator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  uuid = "2521237C-A9E0-4CA8-AE94-744A780C0CF1 - ab13b683ab22de3c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BlaBlaCar.RideCreator.$startCity.getter : SwiftUI.Binding&lt;Swift.Optional&lt;BlaBlaCar.City&gt;&gt;"
+                  moduleName = "BlaBlaCar"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulinagnas/Desktop/BlaBlaCar/BlaBlaCar/RideCreator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "153">
+               </Location>
+               <Location
+                  uuid = "2521237C-A9E0-4CA8-AE94-744A780C0CF1 - c65c0cb5aaa8b41c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BlaBlaCar.RideCreator.init() -&gt; BlaBlaCar.RideCreator"
+                  moduleName = "BlaBlaCar"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulinagnas/Desktop/BlaBlaCar/BlaBlaCar/RideCreator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "399">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "35F0B233-ABDA-41E6-909F-DF49C50663E2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BlaBlaCar/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7CB759AE-82F1-4589-805D-E35BB5D9F5DE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BlaBlaCar/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E770C91E-4584-424E-A029-23B8163756E2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BlaBlaCar/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "110A205E-5E29-47C8-9365-FF78957B83DA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BlaBlaCar/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0EAAA972-307C-4C3B-9847-B7A043C7AF18"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BlaBlaCar/RideCreator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "saveRide()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "73808E23-AE55-4A6B-9646-332131FAD169"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BlaBlaCar/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "73808E23-AE55-4A6B-9646-332131FAD169 - ee19701f36d60908"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.ForEach&lt;SwiftUI.FetchedResults&lt;BlaBlaCar.Ride&gt;, Swift.Optional&lt;Foundation.UUID&gt;, BlaBlaCar.RideView&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;SwiftUI.FetchedResults&lt;BlaBlaCar.Ride&gt;, Swift.Optional&lt;Foundation.UUID&gt;, BlaBlaCar.RideView&gt;&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, BlaBlaCar.RideCreator&gt;)&gt; in closure #1 () -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;SwiftUI.FetchedResults&lt;BlaBlaCar.Ride&gt;, Swift.Optional&lt;Foundation.UUID&gt;, BlaBlaCar.RideView&gt;&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, BlaBlaCar.RideCreator&gt;)&gt;&gt; in BlaBlaCar.ContentView.body.getter : some"
+                  moduleName = "BlaBlaCar"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulinagnas/Desktop/BlaBlaCar/BlaBlaCar/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "343">
+               </Location>
+               <Location
+                  uuid = "73808E23-AE55-4A6B-9646-332131FAD169 - 9945e7c10122e402"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (BlaBlaCar.Ride) -&gt; BlaBlaCar.RideView in closure #1 () -&gt; SwiftUI.ForEach&lt;SwiftUI.FetchedResults&lt;BlaBlaCar.Ride&gt;, Swift.Optional&lt;Foundation.UUID&gt;, BlaBlaCar.RideView&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;SwiftUI.FetchedResults&lt;BlaBlaCar.Ride&gt;, Swift.Optional&lt;Foundation.UUID&gt;, BlaBlaCar.RideView&gt;&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, BlaBlaCar.RideCreator&gt;)&gt; in closure #1 () -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;SwiftUI.FetchedResults&lt;BlaBlaCar.Ride&gt;, Swift.Optional&lt;Foundation.UUID&gt;, BlaBlaCar.RideView&gt;&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, BlaBlaCar.RideCreator&gt;)&gt;&gt; in BlaBlaCar.ContentView.body.getter : some"
+                  moduleName = "BlaBlaCar"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulinagnas/Desktop/BlaBlaCar/BlaBlaCar/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "168">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -1,0 +1,20 @@
+[
+    
+    {
+        "name":"Warszawa",
+        "latitude" : 52.13,
+        "longitude" : 21.00
+    },
+    {
+        "name":"Lublin",
+        "latitude" : 51.2499,
+        "longitude" : 22.5774
+    },
+    {
+        "name":"Krakow",
+        "latitude" : 50.04,
+        "longitude" : 20.00
+        
+    }
+]
+ 
