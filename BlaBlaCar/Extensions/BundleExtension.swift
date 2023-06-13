@@ -9,7 +9,9 @@ extension Bundle {
         guard let data = try? Data(contentsOf: url) else {
             fatalError("Failed to load \(file) from bundle")
         }
+        
         let decoder = JSONDecoder()
+        
         do {
             let loaded = try decoder.decode(T.self, from: data)
             return loaded
@@ -17,7 +19,5 @@ extension Bundle {
             print(error)
             fatalError(error.localizedDescription)
         }
-        
-       
     }
 }

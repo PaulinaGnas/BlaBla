@@ -30,7 +30,7 @@ struct MapMKMapView: UIViewRepresentable {
         do {
             cities = try moc.fetch(request)
         } catch {
-            print("Nołp")
+            print("")
         }
     }
     
@@ -47,6 +47,17 @@ struct MapMKMapView: UIViewRepresentable {
         let p1 = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: cities.first!.latitude, longitude: cities.first!.longitude))
         let p2 = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: cities.last!.latitude, longitude: cities.last!.longitude))
         
+        let p1name = MKPointAnnotation()
+        let p2name = MKPointAnnotation()
+        
+        p1name.title = cities.first!.name
+        p1name.coordinate = CLLocationCoordinate2D(latitude: cities.first!.latitude, longitude:  cities.first!.longitude)
+        mapView.addAnnotation(p1name)
+        
+        p2name.title = cities.last!.name
+        p2name.coordinate = CLLocationCoordinate2D(latitude: cities.last!.latitude, longitude:  cities.last!.longitude)
+        mapView.addAnnotation(p2name)
+        
         let request = MKDirections.Request()
         request.source = MKMapItem(placemark: p1)
         request.destination = MKMapItem(placemark: p2)
@@ -56,7 +67,7 @@ struct MapMKMapView: UIViewRepresentable {
         let directions = MKDirections(request: request)
         directions.calculate { response, error in
             guard let route = response?.routes.first else { return }
-            mapView.addAnnotations([p1, p2])
+
             mapView.addOverlay(route.polyline)
             mapView.setVisibleMapRect(route.polyline.boundingMapRect, edgePadding: UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20), animated: true)
         }

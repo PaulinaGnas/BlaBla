@@ -21,47 +21,51 @@ struct RideCreator: View {
     
     @State private var driver = Drivers(name: "", surename: "", phoneNumber: "", email: "", car: "", image: "")
     @State private var date = Date.now
-    
+    @State private var showErr = false
     
     //MARK: - FUNCTIONS
     
     func saveRide() {
-        
-        let newRide = Ride(context: moc)
-        newRide.id = UUID()
-        newRide.startCity = startCity.name
-        newRide.endCity = endCity.name
-        newRide.date = date
-        
-        newRide.rideDriver = Driver(context: moc)
-        newRide.rideDriver?.name = driver.name
-        newRide.rideDriver?.surename = driver.surename
-        newRide.rideDriver?.email = driver.email
-        newRide.rideDriver?.phoneNumber = driver.phoneNumber
-        newRide.rideDriver?.car = driver.car
-        newRide.rideDriver?.image = driver.image
-        newRide.rideDriver?.id = UUID()
-        
-        let cityOne = CityData(context: moc)
-        cityOne.name = startCity.name
-        cityOne.longitude = startCity.longitude
-        cityOne.latitude = startCity.latitude
-        cityOne.cityRide = newRide
-        cityOne.id = UUID()
-        
-        let cityTwo = CityData(context: moc)
-        cityTwo.name = endCity.name
-        cityTwo.longitude = endCity.longitude
-        cityTwo.latitude = endCity.latitude
-        cityTwo.cityRide = newRide
-        cityTwo.id = UUID()
-        
-        do {
-            try moc.save()
-            print("yep")
-        } catch {
-            let nsError = error as NSError
-            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+        if startCity == endCity {
+            showErr = true
+            
+        } else {
+            let newRide = Ride(context: moc)
+            newRide.id = UUID()
+            newRide.startCity = startCity.name
+            newRide.endCity = endCity.name
+            newRide.date = date
+            
+            newRide.rideDriver = Driver(context: moc)
+            newRide.rideDriver?.name = driver.name
+            newRide.rideDriver?.surename = driver.surename
+            newRide.rideDriver?.email = driver.email
+            newRide.rideDriver?.phoneNumber = driver.phoneNumber
+            newRide.rideDriver?.car = driver.car
+            newRide.rideDriver?.image = driver.image
+            newRide.rideDriver?.id = UUID()
+            
+            let cityOne = CityData(context: moc)
+            cityOne.name = startCity.name
+            cityOne.longitude = startCity.longitude
+            cityOne.latitude = startCity.latitude
+            cityOne.cityRide = newRide
+            cityOne.id = UUID()
+            
+            let cityTwo = CityData(context: moc)
+            cityTwo.name = endCity.name
+            cityTwo.longitude = endCity.longitude
+            cityTwo.latitude = endCity.latitude
+            cityTwo.cityRide = newRide
+            cityTwo.id = UUID()
+            
+            do {
+                try moc.save()
+                print("yep")
+            } catch {
+                let nsError = error as NSError
+                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+            }
         }
     }
     
@@ -69,50 +73,86 @@ struct RideCreator: View {
     //MARK: - BODY
     
     var body: some View {
-        VStack {
-            Picker("Select starting point", selection: $startCity) {
-                ForEach(cities, id: \.self) {
-                    Text($0.name)
+        ZStack{
+            Form {
+                Section{
+                    Picker("Select starting point", selection: $startCity) {
+                        ForEach(cities, id: \.self) {
+                            Text($0.name)
+                        }
+                    }
+                    
+                    Picker("Selects destination", selection: $endCity) {
+                        ForEach(cities, id: \.self) {
+                            Text($0.name)
+                        }
+                    }
+                    
+                    DatePicker(selection: $date, displayedComponents: [.date, .hourAndMinute]) {
+                        Text("Select a date")
+                    }
+                } header: {
+                    Text("Ride settings")
+                }
+                
+                Section{
+                    Picker("Driver", selection: $driver) {
+                        ForEach(drivers, id: \.self) {
+                            Text($0.name)
+                        }
+                    }
+                } header: {
+                    Text("Select driver")
+                }
+                
+                Section{
+                    HStack{
+                        Spacer()
+                        Image(driver.image)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 90, height: 90)
+                        Spacer()
+                    }
+                } header: {
+                    Text("Driver photo")
                 }
             }
-            Text("\(startCity.name)")
+            .navigationTitle(Text("Create ride"))
+            .onAppear {
+                startCity = cities.first!
+                endCity = cities.last!
+                driver = drivers.first!
+            }
             
-            Picker("Selects destination", selection: $endCity) {
-                ForEach(cities, id: \.self) {
-                    Text($0.name)
+            VStack{
+                Spacer()
+                Button {
+                    saveRide()
+                    if !showErr {
+                        dismiss()
+                    }
+                } label: {
+                    ZStack {
+                        Capsule()
+                            .stroke(.blue, lineWidth: 2)
+                            .frame(width: 100, height: 40)
+                        HStack{
+                            Text("Save")
+                                .font(.system(size: 20))
+                            Image(systemName: "chevron.forward")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 15, height: 15)
+                        }
+                    }
                 }
-            }
-            Text("\(endCity.name)")
-            
-            DatePicker(selection: $date, displayedComponents: [.date, .hourAndMinute]) {
-                Text("Select a date")
-            }
-            
-            Text("Date is \(date.formatted(date: .long, time: .complete))")
-            
-            Picker("Driver", selection: $driver) {
-                ForEach(drivers, id: \.self) {
-                    Text($0.name)
-                }
-            }
-            Text("\(driver.name)")
-            
-            Image(driver.image)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 90, height: 90)
-            
-            Button {
-                saveRide()
-                dismiss()
-            } label: {
-                Text("Save")
+                .padding()
+                .disabled(showErr)
             }
         }
-        .onAppear {
-            startCity = cities.first!
-            endCity = cities.last!
-            driver = drivers.first!
+        .alert(isPresented: $showErr) {
+            Alert(title: Text("Invalid data"), message: Text("Starting city is the same as the destination"), dismissButton: .cancel())
         }
     }
 }

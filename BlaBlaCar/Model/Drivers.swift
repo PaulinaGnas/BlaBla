@@ -10,11 +10,11 @@ struct Drivers: Hashable{
 }
 
 let drivers: [Drivers] = [
-    Drivers(name: "Adam", surename: "Kowalski", phoneNumber: "123456789", email: "poczta@poczta.com", car: "opel",image: "Adam"),
-    Drivers(name: "Adam1", surename: "Kowalski1", phoneNumber: "123456789", email: "poczta@poczta.com", car: "opel",image: "Adam"),
-    Drivers(name: "Adam2", surename: "Kowalski2", phoneNumber: "123456789", email: "poczta@poczta.com", car: "opel",image: "Adam"),
-    Drivers(name: "Adam3", surename: "Kowalski3", phoneNumber: "123456789", email: "poczta@poczta.com", car: "opel",image: "Adam"),
-    Drivers(name: "Adam4", surename: "Kowalski4", phoneNumber: "123456789", email: "poczta@poczta.com", car: "opel",image: "Adam"),
-    Drivers(name: "Adam5", surename: "Kowalski5", phoneNumber: "123456789", email: "poczta@poczta.com", car: "opel",image: "Adam")
+    Drivers(name: "Adam", surename: "Kowalski", phoneNumber: "672851882", email: "adam@poczta.com", car: "Opel Astra",image: "Adam"),
+    Drivers(name: "Mateusz", surename: "Nowak", phoneNumber: "662211001", email: "mateusz01@poczta.com", car: "Nissan Micra",image: "Mateusz"),
+    Drivers(name: "Włodzimierz", surename: "Lewandowski", phoneNumber: "421127885", email: "wlodek75@poczta.com", car: "Volkswagen Passat",image: "Włodzimierz"),
+    Drivers(name: "Jakub", surename: "Nowakowski", phoneNumber: "452888020", email: "jacob@poczta.com", car: "Toyota Yaris",image: "Jakub"),
+    Drivers(name: "Beata", surename: "Adamczyk", phoneNumber: "322990678", email: "beata@poczta.com", car: "Citroen Picasso",image: "Beata"),
+    Drivers(name: "Krystyna", surename: "Kowalik", phoneNumber: "233783521", email: "krystyna1123@poczta.com", car: "Renault Megane",image: "Krystyna")
 ]
 

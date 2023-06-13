@@ -29,17 +29,20 @@ struct RideView: View {
     //MARK: - BODY
     
     var body: some View {
-        VStack {
-            Text("Starting location: \(cityOne.first?.name ?? "")")
-            Text("Destination: \(cityTwo.first?.name ?? "")")
-            Text("\(date.formatted(date: .complete, time: .shortened))")
+        VStack(alignment: .leading) {
+            Text("\(cityOne.first?.name ?? "") - \(cityTwo.first?.name ?? "")")
+                .font(.title2)
+                .fontWeight(.bold)
+                .padding(.bottom, 2)
+            
+            Text("\(date.formatted(date: .abbreviated , time: .omitted))   \(date.formatted(date: .omitted , time: .shortened))")
             HStack{
                 Image(driver.first?.image ?? "")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 50,height: 50)
                     .clipShape(Circle())
-                Text("Driver: \(driver.first?.name ?? "") \(driver.first?.surename ?? "")")
+                Text("\(driver.first?.name ?? "") \(driver.first?.surename ?? "")")
             }
         }
     }

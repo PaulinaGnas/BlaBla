@@ -1,20 +1,58 @@
 [
-    
     {
-        "name":"Warszawa",
+        "name" : "Warszawa",
         "latitude" : 52.13,
         "longitude" : 21.00
     },
     {
-        "name":"Lublin",
+        "name" : "Lublin",
         "latitude" : 51.2499,
         "longitude" : 22.5774
     },
     {
-        "name":"Krakow",
-        "latitude" : 50.04,
-        "longitude" : 20.00
-        
+        "name" : "Krakow",
+        "latitude" : 50.0630,
+        "longitude" : 19.9412
+    },
+    {
+        "name" : "Wrocław",
+        "latitude" : 51.0967,
+        "longitude" : 17.0454
+    },
+    {
+        "name" : "Siedlce",
+        "latitude" : 52.1657,
+        "longitude" : 22.2881
+    },
+    {
+        "name" : "Gdańsk",
+        "latitude" : 54.3527,
+        "longitude" : 18.6519
+    },
+    {
+        "name" : "Rzeszów",
+        "latitude" : 50.0287,
+        "longitude" : 22.0007
+    },
+    {
+        "name" : "Poznań",
+        "latitude" : 52.4005,
+        "longitude" : 16.9273
+    },
+    {
+        "name" : "Białystok",
+        "latitude" : 53.1341,
+        "longitude" : 23.1682
+    },
+    {
+        "name" : "Toruń",
+        "latitude" : 53.0141,
+        "longitude" : 18.6042
+    },
+    {
+        "name" : "Katowice",
+        "latitude" : 50.2697,
+        "longitude" : 19.0243
     }
 ]
  

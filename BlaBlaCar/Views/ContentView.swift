@@ -14,9 +14,11 @@ struct ContentView: View {
     
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(sortDescriptors: []) private var rides: FetchedResults<Ride>
+    @State var userName = UserDefaults.standard.string(forKey: "Name") ?? "John"
     let cities: [City] = Bundle.main.decode("Cities.json")
     
     @FetchRequest(sortDescriptors: [], predicate: NSPredicate(format: "name == %@", "Adam")) private var driver: FetchedResults<Driver>
+    
     //MARK: - FUNCTIONS
     
     private func deleteItems(offsets: IndexSet) {
@@ -40,45 +42,52 @@ struct ContentView: View {
             ZStack {
                 VStack{
                     if rides.count != 0 {
-                        List{
+                        List {
                             ForEach(rides) { ride in
                                 NavigationLink(destination: RideInfo(ride: ride)) {
-                                    RideView(filterOne: ride.startCity ?? "", filterTwo: ride.endCity ?? "",filerThree: ride)
+                                    RideView(filterOne: ride.startCity ?? "", filterTwo: ride.endCity ?? "", filerThree: ride)
                                 }
-                                //image magnification gesture
-                                //walidajca
-                                //profil edit getture
-                                //poprawic UI
-                                //dark theme
-                                //tworzenie proilu przy wlaczeniu
-                                //edycja tego profilu przy przytrzymaniu ikony z profilu
                             }
                             .onDelete(perform: deleteItems)
                         }
                     } else {
-                        Text("Imie uzytkownika dodja swoje przejazdy")
+                        Text("\(userName) dodaj swoje przejazdy!")
                     }
                 }
                 VStack {
                     Spacer()
                     HStack {
+                        NavigationLink(destination: ProfileView()) {
+                            ZStack {
+                                Circle()
+                                    .stroke(.blue, lineWidth: 2)
+                                    .frame(width: 60, height: 60)
+                                
+                                Image(systemName: "person.fill")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 30, height: 30)
+                            }
+                        }.padding()
+                        
                         Spacer()
                         NavigationLink(destination: RideCreator()) {
                             ZStack {
                                 Circle()
                                     .stroke(.blue, lineWidth: 2)
-                                    .frame(width: 40, height: 40)
+                                    .frame(width: 60, height: 60)
                                 
                                 Image(systemName: "plus")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 20, height: 20)
+                                    .frame(width: 30, height: 30)
                             }
                         }
                         .padding()
                     }
                 }
             }
+            .navigationTitle(Text("Choose your ride"))
         }
     }
 }
