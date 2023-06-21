@@ -11,7 +11,6 @@ import CoreData
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(sortDescriptors: []) private var rides: FetchedResults<Ride>
-    @FetchRequest(sortDescriptors: [], predicate: NSPredicate(format: "name == %@", "Adam")) private var driver: FetchedResults<Driver>
     @State private var userName = UserDefaults.standard.string(forKey: "Name") ?? "John"
     
     private func deleteItems(offsets: IndexSet) {

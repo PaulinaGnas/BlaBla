@@ -31,7 +31,7 @@ struct RideCreator: View {
             newRide.date = date
             newRide.startCity = startCity.name
             newRide.endCity = endCity.name
-            newRide.addToRideCity(startCity)
+            newRide.addToRideCity(startCity) // dodawanie miasta do relacji
             newRide.addToRideCity(endCity)
             newRide.date = date
             newRide.rideDriver = selectedDriver

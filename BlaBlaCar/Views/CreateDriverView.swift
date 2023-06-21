@@ -25,6 +25,7 @@ struct CreateDriverView: View {
                 TextField("Name", text: $name)
                 TextField("Surename", text: $surename)
                 TextField("Phone Number", text: $phoneNumber)
+                    .keyboardType(.numberPad)
                 TextField("Email address", text: $email)
                 TextField("Car", text: $car)
                 Picker("Photo", selection: $image) {

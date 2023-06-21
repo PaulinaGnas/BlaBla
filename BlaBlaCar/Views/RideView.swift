@@ -10,13 +10,11 @@ import SwiftUI
 struct RideView: View {
     
     private var date: Date
-    private var ride: Ride
     private var startCity: CityData
     private var destination: CityData
     private var driver: Driver
     
     init(_ ride: Ride) {
-        self.ride = ride
         startCity = ride.cityArray.first(where: { $0.name == ride.startCity })!
         destination = ride.cityArray.first(where: { $0.name == ride.endCity })!
         driver = ride.rideDriver!

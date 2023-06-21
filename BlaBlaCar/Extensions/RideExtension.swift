@@ -9,7 +9,7 @@ import Foundation
 
 extension Ride {
     public var cityArray: [CityData] {
-        let set = rideCity as? Set<CityData> ?? []
+        let set = rideCity as? Set<CityData> ?? [] // przypisuje RELACJE
         return set.sorted {
             $0.name! < $1.name!
         }
