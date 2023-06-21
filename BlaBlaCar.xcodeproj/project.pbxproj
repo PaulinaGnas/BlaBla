@@ -11,13 +11,13 @@
 		350449FF2A3F2A0300C775D6 /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350449FE2A3F2A0300C775D6 /* BlankView.swift */; };
 		35044A4F2A40B10D00C775D6 /* CreateDriverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35044A4E2A40B10D00C775D6 /* CreateDriverView.swift */; };
 		35044A512A41D36300C775D6 /* RideExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35044A502A41D36300C775D6 /* RideExtension.swift */; };
-		3537ECFD2A34973800045849 /* BlaBlaCar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3537ECFB2A34973800045849 /* BlaBlaCar.xcdatamodeld */; };
 		3561B83E2A335B98004FDAF5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3561B83D2A335B98004FDAF5 /* ProfileView.swift */; };
 		3561B8402A33963F004FDAF5 /* PictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3561B83F2A33963F004FDAF5 /* PictureView.swift */; };
 		357886CF2A42D9D6000057F3 /* CityDataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357886CE2A42D9D6000057F3 /* CityDataExtension.swift */; };
 		357886D12A42DA47000057F3 /* AddCityNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357886D02A42DA47000057F3 /* AddCityNameView.swift */; };
 		357886D32A42F629000057F3 /* CitiesSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357886D22A42F629000057F3 /* CitiesSettings.swift */; };
 		357886D52A42F642000057F3 /* DriversSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357886D42A42F642000057F3 /* DriversSettings.swift */; };
+		357886DB2A43ABAD000057F3 /* BlaBlaCar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 357886D92A43ABAD000057F3 /* BlaBlaCar.xcdatamodeld */; };
 		35AB9E532A23970600CF760A /* BlaBlaCarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB9E522A23970600CF760A /* BlaBlaCarApp.swift */; };
 		35AB9E552A23970600CF760A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB9E542A23970600CF760A /* ContentView.swift */; };
 		35AB9E572A23970700CF760A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35AB9E562A23970700CF760A /* Assets.xcassets */; };
@@ -37,13 +37,13 @@
 		350449FE2A3F2A0300C775D6 /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
 		35044A4E2A40B10D00C775D6 /* CreateDriverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDriverView.swift; sourceTree = "<group>"; };
 		35044A502A41D36300C775D6 /* RideExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideExtension.swift; sourceTree = "<group>"; };
-		3537ECFC2A34973800045849 /* BlaBlaCar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BlaBlaCar.xcdatamodel; sourceTree = "<group>"; };
 		3561B83D2A335B98004FDAF5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		3561B83F2A33963F004FDAF5 /* PictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureView.swift; sourceTree = "<group>"; };
 		357886CE2A42D9D6000057F3 /* CityDataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDataExtension.swift; sourceTree = "<group>"; };
 		357886D02A42DA47000057F3 /* AddCityNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityNameView.swift; sourceTree = "<group>"; };
 		357886D22A42F629000057F3 /* CitiesSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesSettings.swift; sourceTree = "<group>"; };
 		357886D42A42F642000057F3 /* DriversSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversSettings.swift; sourceTree = "<group>"; };
+		357886DA2A43ABAD000057F3 /* BlaBlaCar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BlaBlaCar.xcdatamodel; sourceTree = "<group>"; };
 		35AB9E4F2A23970600CF760A /* BlaBlaCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlaBlaCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35AB9E522A23970600CF760A /* BlaBlaCarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlaBlaCarApp.swift; sourceTree = "<group>"; };
 		35AB9E542A23970600CF760A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 		35AB9E722A23DC3A00CF760A /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				3537ECFB2A34973800045849 /* BlaBlaCar.xcdatamodeld */,
+				357886D92A43ABAD000057F3 /* BlaBlaCar.xcdatamodeld */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -230,6 +230,7 @@
 				35E511792A26386F00A9A013 /* RideView.swift in Sources */,
 				357886CF2A42D9D6000057F3 /* CityDataExtension.swift in Sources */,
 				35AB9E692A23A37500CF760A /* BundleExtension.swift in Sources */,
+				357886DB2A43ABAD000057F3 /* BlaBlaCar.xcdatamodeld in Sources */,
 				35AB9E6F2A23D95C00CF760A /* MapView.swift in Sources */,
 				357886D32A42F629000057F3 /* CitiesSettings.swift in Sources */,
 				35AB9E772A24CF4700CF760A /* DriverView.swift in Sources */,
@@ -241,7 +242,6 @@
 				35E5117B2A263AA000A9A013 /* MapMKMapView.swift in Sources */,
 				3561B83E2A335B98004FDAF5 /* ProfileView.swift in Sources */,
 				350449FF2A3F2A0300C775D6 /* BlankView.swift in Sources */,
-				3537ECFD2A34973800045849 /* BlaBlaCar.xcdatamodeld in Sources */,
 				357886D12A42DA47000057F3 /* AddCityNameView.swift in Sources */,
 				35044A4F2A40B10D00C775D6 /* CreateDriverView.swift in Sources */,
 				35044A512A41D36300C775D6 /* RideExtension.swift in Sources */,
@@ -449,14 +449,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		3537ECFB2A34973800045849 /* BlaBlaCar.xcdatamodeld */ = {
+		357886D92A43ABAD000057F3 /* BlaBlaCar.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				3537ECFC2A34973800045849 /* BlaBlaCar.xcdatamodel */,
+				357886DA2A43ABAD000057F3 /* BlaBlaCar.xcdatamodel */,
 			);
-			currentVersion = 3537ECFC2A34973800045849 /* BlaBlaCar.xcdatamodel */;
-			name = BlaBlaCar.xcdatamodeld;
-			path = ../../../../BlaBla/BlaBlaCar/Data/BlaBlaCar.xcdatamodeld;
+			currentVersion = 357886DA2A43ABAD000057F3 /* BlaBlaCar.xcdatamodel */;
+			path = BlaBlaCar.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
