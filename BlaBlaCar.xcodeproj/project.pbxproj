@@ -7,44 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		350449FD2A3F29DD00C775D6 /* AddCityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350449FC2A3F29DD00C775D6 /* AddCityView.swift */; };
+		350449FF2A3F2A0300C775D6 /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350449FE2A3F2A0300C775D6 /* BlankView.swift */; };
+		35044A4F2A40B10D00C775D6 /* CreateDriverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35044A4E2A40B10D00C775D6 /* CreateDriverView.swift */; };
+		35044A512A41D36300C775D6 /* RideExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35044A502A41D36300C775D6 /* RideExtension.swift */; };
 		3537ECFD2A34973800045849 /* BlaBlaCar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3537ECFB2A34973800045849 /* BlaBlaCar.xcdatamodeld */; };
 		3561B83E2A335B98004FDAF5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3561B83D2A335B98004FDAF5 /* ProfileView.swift */; };
 		3561B8402A33963F004FDAF5 /* PictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3561B83F2A33963F004FDAF5 /* PictureView.swift */; };
+		357886CF2A42D9D6000057F3 /* CityDataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357886CE2A42D9D6000057F3 /* CityDataExtension.swift */; };
+		357886D12A42DA47000057F3 /* AddCityNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357886D02A42DA47000057F3 /* AddCityNameView.swift */; };
+		357886D32A42F629000057F3 /* CitiesSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357886D22A42F629000057F3 /* CitiesSettings.swift */; };
+		357886D52A42F642000057F3 /* DriversSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357886D42A42F642000057F3 /* DriversSettings.swift */; };
 		35AB9E532A23970600CF760A /* BlaBlaCarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB9E522A23970600CF760A /* BlaBlaCarApp.swift */; };
 		35AB9E552A23970600CF760A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB9E542A23970600CF760A /* ContentView.swift */; };
 		35AB9E572A23970700CF760A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35AB9E562A23970700CF760A /* Assets.xcassets */; };
 		35AB9E5A2A23970700CF760A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35AB9E592A23970700CF760A /* Preview Assets.xcassets */; };
 		35AB9E5C2A23970700CF760A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB9E5B2A23970700CF760A /* Persistence.swift */; };
-		35AB9E672A23A12A00CF760A /* Cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 35AB9E662A23A12A00CF760A /* Cities.json */; };
 		35AB9E692A23A37500CF760A /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB9E682A23A37500CF760A /* BundleExtension.swift */; };
-		35AB9E6B2A23A3E200CF760A /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB9E6A2A23A3E200CF760A /* City.swift */; };
 		35AB9E6D2A23AB0300CF760A /* RideCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB9E6C2A23AB0300CF760A /* RideCreator.swift */; };
 		35AB9E6F2A23D95C00CF760A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB9E6E2A23D95C00CF760A /* MapView.swift */; };
 		35AB9E752A24C95400CF760A /* RideInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB9E742A24C95400CF760A /* RideInfo.swift */; };
 		35AB9E772A24CF4700CF760A /* DriverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB9E762A24CF4700CF760A /* DriverView.swift */; };
-		35AB9E792A24D0A300CF760A /* Drivers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB9E782A24D0A300CF760A /* Drivers.swift */; };
 		35E511792A26386F00A9A013 /* RideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E511782A26386F00A9A013 /* RideView.swift */; };
 		35E5117B2A263AA000A9A013 /* MapMKMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E5117A2A263AA000A9A013 /* MapMKMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		350449FC2A3F29DD00C775D6 /* AddCityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityView.swift; sourceTree = "<group>"; };
+		350449FE2A3F2A0300C775D6 /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
+		35044A4E2A40B10D00C775D6 /* CreateDriverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDriverView.swift; sourceTree = "<group>"; };
+		35044A502A41D36300C775D6 /* RideExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideExtension.swift; sourceTree = "<group>"; };
 		3537ECFC2A34973800045849 /* BlaBlaCar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BlaBlaCar.xcdatamodel; sourceTree = "<group>"; };
 		3561B83D2A335B98004FDAF5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		3561B83F2A33963F004FDAF5 /* PictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureView.swift; sourceTree = "<group>"; };
+		357886CE2A42D9D6000057F3 /* CityDataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDataExtension.swift; sourceTree = "<group>"; };
+		357886D02A42DA47000057F3 /* AddCityNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityNameView.swift; sourceTree = "<group>"; };
+		357886D22A42F629000057F3 /* CitiesSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesSettings.swift; sourceTree = "<group>"; };
+		357886D42A42F642000057F3 /* DriversSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversSettings.swift; sourceTree = "<group>"; };
 		35AB9E4F2A23970600CF760A /* BlaBlaCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlaBlaCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35AB9E522A23970600CF760A /* BlaBlaCarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlaBlaCarApp.swift; sourceTree = "<group>"; };
 		35AB9E542A23970600CF760A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		35AB9E562A23970700CF760A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35AB9E592A23970700CF760A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		35AB9E5B2A23970700CF760A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		35AB9E662A23A12A00CF760A /* Cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Cities.json; sourceTree = "<group>"; };
 		35AB9E682A23A37500CF760A /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
-		35AB9E6A2A23A3E200CF760A /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		35AB9E6C2A23AB0300CF760A /* RideCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideCreator.swift; sourceTree = "<group>"; };
 		35AB9E6E2A23D95C00CF760A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		35AB9E742A24C95400CF760A /* RideInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideInfo.swift; sourceTree = "<group>"; };
 		35AB9E762A24CF4700CF760A /* DriverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverView.swift; sourceTree = "<group>"; };
-		35AB9E782A24D0A300CF760A /* Drivers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drivers.swift; sourceTree = "<group>"; };
 		35E511782A26386F00A9A013 /* RideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideView.swift; sourceTree = "<group>"; };
 		35E5117A2A263AA000A9A013 /* MapMKMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMKMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,7 +93,6 @@
 				35AB9E5B2A23970700CF760A /* Persistence.swift */,
 				35AB9E712A23DC2600CF760A /* Extensions */,
 				35AB9E702A23DC1700CF760A /* Views */,
-				35AB9E732A23DC5100CF760A /* Model */,
 				35E5117C2A263B9500A9A013 /* Utilities */,
 				35AB9E722A23DC3A00CF760A /* Data */,
 				35AB9E582A23970700CF760A /* Preview Content */,
@@ -111,6 +120,12 @@
 				35E5117A2A263AA000A9A013 /* MapMKMapView.swift */,
 				3561B83D2A335B98004FDAF5 /* ProfileView.swift */,
 				3561B83F2A33963F004FDAF5 /* PictureView.swift */,
+				350449FC2A3F29DD00C775D6 /* AddCityView.swift */,
+				350449FE2A3F2A0300C775D6 /* BlankView.swift */,
+				35044A4E2A40B10D00C775D6 /* CreateDriverView.swift */,
+				357886D02A42DA47000057F3 /* AddCityNameView.swift */,
+				357886D22A42F629000057F3 /* CitiesSettings.swift */,
+				357886D42A42F642000057F3 /* DriversSettings.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -119,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				35AB9E682A23A37500CF760A /* BundleExtension.swift */,
+				35044A502A41D36300C775D6 /* RideExtension.swift */,
+				357886CE2A42D9D6000057F3 /* CityDataExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -127,18 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				3537ECFB2A34973800045849 /* BlaBlaCar.xcdatamodeld */,
-				35AB9E662A23A12A00CF760A /* Cities.json */,
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		35AB9E732A23DC5100CF760A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				35AB9E782A24D0A300CF760A /* Drivers.swift */,
-				35AB9E6A2A23A3E200CF760A /* City.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		35E5117C2A263B9500A9A013 /* Utilities */ = {
@@ -209,7 +216,6 @@
 			files = (
 				35AB9E5A2A23970700CF760A /* Preview Assets.xcassets in Resources */,
 				35AB9E572A23970700CF760A /* Assets.xcassets in Resources */,
-				35AB9E672A23A12A00CF760A /* Cities.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,19 +228,25 @@
 			files = (
 				3561B8402A33963F004FDAF5 /* PictureView.swift in Sources */,
 				35E511792A26386F00A9A013 /* RideView.swift in Sources */,
+				357886CF2A42D9D6000057F3 /* CityDataExtension.swift in Sources */,
 				35AB9E692A23A37500CF760A /* BundleExtension.swift in Sources */,
 				35AB9E6F2A23D95C00CF760A /* MapView.swift in Sources */,
+				357886D32A42F629000057F3 /* CitiesSettings.swift in Sources */,
 				35AB9E772A24CF4700CF760A /* DriverView.swift in Sources */,
 				35AB9E5C2A23970700CF760A /* Persistence.swift in Sources */,
-				35AB9E6B2A23A3E200CF760A /* City.swift in Sources */,
 				35AB9E552A23970600CF760A /* ContentView.swift in Sources */,
 				35AB9E532A23970600CF760A /* BlaBlaCarApp.swift in Sources */,
 				35AB9E752A24C95400CF760A /* RideInfo.swift in Sources */,
 				35AB9E6D2A23AB0300CF760A /* RideCreator.swift in Sources */,
 				35E5117B2A263AA000A9A013 /* MapMKMapView.swift in Sources */,
 				3561B83E2A335B98004FDAF5 /* ProfileView.swift in Sources */,
+				350449FF2A3F2A0300C775D6 /* BlankView.swift in Sources */,
 				3537ECFD2A34973800045849 /* BlaBlaCar.xcdatamodeld in Sources */,
-				35AB9E792A24D0A300CF760A /* Drivers.swift in Sources */,
+				357886D12A42DA47000057F3 /* AddCityNameView.swift in Sources */,
+				35044A4F2A40B10D00C775D6 /* CreateDriverView.swift in Sources */,
+				35044A512A41D36300C775D6 /* RideExtension.swift in Sources */,
+				357886D52A42F642000057F3 /* DriversSettings.swift in Sources */,
+				350449FD2A3F29DD00C775D6 /* AddCityView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

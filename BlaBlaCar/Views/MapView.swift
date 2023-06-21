@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MapView: View {
+    
     var ride: Ride
     
     var body: some View {
@@ -17,9 +18,3 @@ struct MapView: View {
         }
     }
 }
-
-//struct MapView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        MapView()
-//    }
-//}

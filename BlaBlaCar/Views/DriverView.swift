@@ -10,7 +10,7 @@ import SwiftUI
 struct DriverView: View {
     
     let driver: Driver
-    @State var showSheet = false
+    @State private var showSheet = false
     
     var body: some View {
         VStack{
@@ -50,11 +50,3 @@ struct DriverView: View {
         }
     }
 }
-
-
-
-//struct DriverView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        DriverView()
-//    }
-//}

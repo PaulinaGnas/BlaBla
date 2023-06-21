@@ -76,14 +76,20 @@ struct ProfileView: View {
                     Text("User data")
                 }
                 
-                Section {
-                    Toggle("Dark theme", isOn: $theme)
-                } header: {
-                    Text("")
-                }
-                
                 Button("Save") {
                     validate()
+                }
+                
+                Section {
+                    NavigationLink(destination: CitiesSettings()) {
+                        Text("City Settings")
+                    }
+                    NavigationLink(destination: DriversSettings()) {
+                        Text("Driver Settings")
+                    }
+                    Toggle("Dark theme", isOn: $theme)
+                } header: {
+                    Text("App settings")
                 }
             }
         }

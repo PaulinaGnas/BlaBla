@@ -9,17 +9,10 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    
-    //MARK: - PROPERTIES
-    
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(sortDescriptors: []) private var rides: FetchedResults<Ride>
-    @State var userName = UserDefaults.standard.string(forKey: "Name") ?? "John"
-    let cities: [City] = Bundle.main.decode("Cities.json")
-    
     @FetchRequest(sortDescriptors: [], predicate: NSPredicate(format: "name == %@", "Adam")) private var driver: FetchedResults<Driver>
-    
-    //MARK: - FUNCTIONS
+    @State private var userName = UserDefaults.standard.string(forKey: "Name") ?? "John"
     
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
@@ -34,9 +27,6 @@ struct ContentView: View {
         }
     }
     
-    
-    //MARK: - BODY
-    
     var body: some View {
         NavigationStack {
             ZStack {
@@ -45,7 +35,7 @@ struct ContentView: View {
                         List {
                             ForEach(rides) { ride in
                                 NavigationLink(destination: RideInfo(ride: ride)) {
-                                    RideView(filterOne: ride.startCity ?? "", filterTwo: ride.endCity ?? "", filerThree: ride)
+                                    RideView(ride)
                                 }
                             }
                             .onDelete(perform: deleteItems)
@@ -68,7 +58,22 @@ struct ContentView: View {
                                     .scaledToFit()
                                     .frame(width: 30, height: 30)
                             }
-                        }.padding()
+                        }
+                        .padding()
+                        
+                        NavigationLink(destination: CreateDriverView()) {
+                            ZStack {
+                                Circle()
+                                    .stroke(.blue, lineWidth: 2)
+                                    .frame(width: 60, height: 60)
+                                
+                                Image(systemName: "person.badge.plus")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 30, height: 30)
+                            }
+                        }
+                        .padding()
                         
                         Spacer()
                         NavigationLink(destination: RideCreator()) {
@@ -89,11 +94,5 @@ struct ContentView: View {
             }
             .navigationTitle(Text("Choose your ride"))
         }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }

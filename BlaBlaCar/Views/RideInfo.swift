@@ -9,14 +9,11 @@ import SwiftUI
 
 struct RideInfo: View {
     
-    //MARK: - PROPERTIES
-    
     let ride: Ride
     @State private var isPresented = false
     @State private var showDriver = false
     @State private var showChangeDriver = false
     
-    //MARK: - BODY
     var body: some View {
         VStack {
             Text("\(ride.startCity ?? "") - \(ride.endCity ?? "")" ).font(.title).fontWeight(.bold).padding(.bottom)
@@ -62,9 +59,3 @@ struct RideInfo: View {
         }
     }
 }
-
-//struct RideInfo_Previews: PreviewProvider {
-//    static var previews: some View {
-//       /RideInfo()
-//    }
-//}
